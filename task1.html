@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person=['ram','sita','gita', 'rita']
+        person.map(item=>document.write(`<h2>${item}</h2>`))
+
+        let family=[
+            {id:1, name: "mohan", edu: "b"},
+            {id:2, name: "saru", edu: "+2"},
+            {id:3, name: "sapana", edu: "b"},
+            {id:2, name: "sajan", edu: "M"},
+        ]
+        family.map(a=>document.write(`${a.name} ${a.edu}`))
+        let c=family.filter(a=>a.edu=='b')
+        c.map(a=>document.write(`<h2>${a.name} ${a.edu}</h2>`))
+    </script>
+</body>
+</html>
